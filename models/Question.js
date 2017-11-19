@@ -20,7 +20,9 @@ class Question{
 
   insert() {
     const self = this
-
+    const sql = `INSERT INTO users (content) VALUES (?)`
+    console.log(`we are inserting ${self.content} into the Database`)
+    
   }
 
 }
