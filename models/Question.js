@@ -7,10 +7,10 @@ class Question{
         id INTEGER PRIMARY KEY,
         content TEXT
       )`
-      
+
       db.run(sql, function(){
         resolve("questions table created")
-      })      
+      })
     })
   }
 
@@ -19,7 +19,7 @@ class Question{
   }
 
   insert() {
-    
+
   }
 
 }
