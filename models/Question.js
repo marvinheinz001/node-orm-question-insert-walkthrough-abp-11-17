@@ -20,7 +20,7 @@ class Question{
 
   insert() {
     const self = this
-    const sql = `INSERT INTO users (content) VALUES (?)`
+    const sql = `INSERT INTO questions (content) VALUES (?)`
     console.log(`we are inserting ${self.content} into the Database`)
 
     return new Promise(function(resolve){
