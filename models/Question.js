@@ -21,10 +21,8 @@ class Question{
   insert() {
     const self = this
     const sql = `INSERT INTO questions (content) VALUES (?)`
-    console.log(`we are inserting ${self.content} into the Database`)
-
     return new Promise(function(resolve){
-      db.run(sql, [self.content], function(){
+      db.run(sql, [self.content], function(err, result){
         console.log(`...question ${this.content} is inserted into the Database`)
         self.id = this.lastID
         resolve(self)
